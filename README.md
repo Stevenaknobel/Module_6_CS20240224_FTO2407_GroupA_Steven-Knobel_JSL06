@@ -1,59 +1,60 @@
-# [JSL06] Submission: CodeCuisine Menu Display System Challenge
+# CodeCuisine Interactive Menu System
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_6_StudentNo_Classcode_Group_Name-Surname_JSL06
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL06] Submission Project Tab.
+Welcome to the **CodeCuisine Interactive Menu System**! This project showcases a dynamic web application for a fictional UberEats restaurant called "CodeCuisine," where users can browse different food categories, select items, and create an order seamlessly.
 
-In this coding challenge, you will build a simple menu display system for a fictional UberEats restaurant called "CodeCuisine." The goal is to display different categories of food items and allow users to add items to their order with a click. This challenge will help you apply various JavaScript concepts, including functions, closures, and event handling, to create an interactive menu.
+## Table of Contents
 
-![alt text](JSL06-solution.gif)
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Objectives:
+## About
 
-- Create and use functions to dynamically populate the menu items on the page.
-- Implement a callback function to handle adding items to the order.
-- Use closures to maintain the state of the order.
-- Utilize function expressions and anonymous functions.
-- Call built-in functions and create custom functions to manage the menu and order system.
+The CodeCuisine Interactive Menu System is designed to enhance the user experience by providing an interactive way to view and select menu items. The system is built using JavaScript to dynamically generate the menu, handle user interactions, and maintain the state of the order in real-time.
 
-## Instructions:
+## Features
 
-1. **Use the Project Files:** Begin by accessing the starter code in the JSL06 GitHub repo.
+- **Dynamic Menu Generation**: Menu items are generated dynamically from a JavaScript object.
+- **Interactive Ordering**: Users can click on menu items to add them to their order.
+- **Order Summary and Total Calculation**: The application keeps track of the items added to the order and calculates the total price.
+- **Real-Time Updates**: Changes to the order are reflected in real-time using JavaScript event handling.
+- **Responsive Design**: A simple, responsive UI using HTML and CSS for a seamless experience across devices.
 
-2. **JavaScript Implementation**: Use the provided starter code in `index.js` as a foundation for your application. The starter code contains placeholders for key functions and comments to guide you through the implementation.
+## Technologies Used
 
-    - `menu`: The `menu` object contains sample menu data, including categories and items. You can expand this menu with more items if needed.
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
-    - `displayMenuItems(menu)`: This function should dynamically create and display menu items grouped by category. Iterate over the `menu` object and create HTML elements for each category and item. Attach event listeners to the menu items to handle adding items to the order.
+## Getting Started
 
-    - `addToOrder(itemName)`: Implement this callback function to update the order summary when an item is added. You can use closures to maintain the state of the order. Calculate and update the total price accordingly.
+To get a copy of this project up and running on your local machine:
 
-    - `initMenuSystem(menu)`: Call the `displayMenuItems` function with the menu data and attach event listeners to menu items.
+1. Clone the repository to your local machine.
+2. Open the project in a code editor.
+3. Open the `index.html` file in a web browser to view and interact with the menu system.
 
-3. **Testing**: Thoroughly test your application to ensure that it can correctly add items to the order and that the order total updates as expected.
+## Usage
 
-## What You Need to Do:
+1. Browse the menu displayed under different categories (Starters, Main Courses, Desserts).
+2. Click on any menu item to add it to your order.
+3. View the order summary and total at the side of the page, updated in real-time.
 
-To complete this challenge, follow these steps:
+## Project Structure
 
-1. Clone the provided Starter Code Repository to your local development environment: [Starter Code Repository](https://github.com/CodeSpace-Academy/Module_6_StudentNo_Classcode_Group_Name-Surname_JSL06).
-2. Open the cloned project in your code editor.
-3. Code your solution following the provided instructions and comments in the starter code.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
+- `index.html` — The main HTML file.
+- `index.css` — The CSS file for styling.
+- `index.js` — The JavaScript file for functionality.
 
-## What You Need to Include:
+## Contributing
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
+Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
 
-## How We'll Assess Your Work:
+## License
 
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
-
-By following these steps and completing the challenge, you will demonstrate your ability to create interactive web applications using JavaScript. Good luck, and enjoy building the CodeCuisine Menu Display System!
+This project is open-source and available under the MIT License.
