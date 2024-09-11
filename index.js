@@ -39,10 +39,22 @@ function addToOrder(itemName) {
     const orderItemsList = document.getElementById('order-items');
     const orderTotalElement = document.getElementById('order-total');
 
-    // Create a list item for the order
-    const orderListItem = document.createElement('li');
-    orderListItem.textContent = itemName;
-    orderItemsList.appendChild(orderListItem);
+    // Check if the item already exists in the order list
+    let existingItem = Array.from(orderItemsList.children).find(item => item.dataset.name === itemName);
+
+    if (existingItem) {
+        // If the item exists, increase its quantity
+        let quantity = parseInt(existingItem.dataset.quantity) + 1;
+        existingItem.dataset.quantity = quantity;
+        existingItem.textContent = `${itemName} x${quantity}`;
+    } else {
+        // If the item does not exist, add it to the order list
+        const orderListItem = document.createElement('li');
+        orderListItem.textContent = `${itemName} x1`; // Initial quantity of 1
+        orderListItem.dataset.name = itemName; // Use a data attribute to store the item name
+        orderListItem.dataset.quantity = 1; // Use a data attribute to store the quantity
+        orderItemsList.appendChild(orderListItem);
+    }
 
     // Update the total price (assuming each item costs R60)
     const itemPrice = 60;
