@@ -5,6 +5,18 @@ const menu = {
     Desserts: ["Tiramisu", "Cheesecake"]
 };
 
+//create a const with the item prices for the food
+const itemPrices = {
+    "Garlic Bread": 50,
+    "Bruschetta": 60,
+    "Margherita Pizza": 120,
+    "Spaghetti Carbonara": 130,
+    "Tiramisu": 80,
+    "Cheesecake": 90
+}
+//declare a variable to track the total cost of the meal
+let totalMeal = 0;
+
 // Function to display menu items by category
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
